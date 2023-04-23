@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "bed5eefd-ab1d-4c33-8f90-39c7e2c69286",
+		"name": "departments_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27055323"
+	},
+	"item": [
+		{
+			"name": "GET_departments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/departments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_departments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Law\",\r\n    \"location\": \"Texas\",\r\n    \"budget\": 10000000,\r\n    \"phone\": \"89254444444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/departments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT_departments",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"Law\",\r\n    \"location\": \"Texas\",\r\n    \"budget\": 20000000,\r\n    \"phone\": \"89254444444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/departments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_departments/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/departments/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"departments",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_departments/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/departments/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"departments",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
