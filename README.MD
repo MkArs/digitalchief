@@ -25,18 +25,18 @@
 2. Описание зависимостей, подключенных в проект.
 
 - spring-boot-starter-data-jpa
-Starter для использования Spring Data JPA с Hibernate.
+(Starter для использования Spring Data JPA с Hibernate)
 
 - spring-boot-starter-web
-Starter для создания web, включая RESTful, приложений, используя Spring MVC. 
-Использует Tomcat как встроенный контейнер по умолчанию.
+(Starter для создания web, включая RESTful, приложений, используя Spring MVC. 
+Использует Tomcat как встроенный контейнер по умолчанию)
 
 - spring-boot-starter-test
-Starter для тестирования Spring Boot приложений с библиотеками JUnit, 
-Hamcrest и Mockito
+(Starter для тестирования Spring Boot приложений с библиотеками JUnit, 
+Hamcrest и Mockito)
 
 - postgresql
-PostgreSQL JDBC Driver для работы с БД
+(PostgreSQL JDBC Driver для работы с БД)
 
 3. Пошаговые инструкции.
 
