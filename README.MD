@@ -41,13 +41,12 @@ PostgreSQL JDBC Driver для работы с БД
 3. Пошаговые инструкции.
 
 3.1. Создание и заполнение БД (скрипты выполняются для PostgreSQL).
-
+- переименовать папку digitalchief-master в digitalchief
 - выполнить скрипты, находящиеся в папке digitalchief\src\main\resources\db_scripts
 в прямом порядке их следования, где очередности соответствует 
 последняя цифра в названии файла
 
 3.2. Сборка и запуск приложения.
-- переименовать папку digitalchief-master в digitalchief
 - выполнить команду mvn clean install из корневой папки проекта digitalchief
 - перейти на уровень выше папки digitalchief в папку target
 - выполнить команду java -jar digitalchief-0.0.1-SNAPSHOT.jar
