@@ -41,7 +41,7 @@ PostgreSQL JDBC Driver для работы с БД
 3. Пошаговые инструкции.
 
 3.1. Создание и заполнение БД (скрипты выполняются для PostgreSQL).
-- переименовать папку digitalchief-master в digitalchief и перейти в неё
+- переименовать папку digitalchief-main в digitalchief и перейти в неё
 - создать образ Docker на основе скрипта, находящегося в папке 
 digitalchief\src\main\resources\db_scripts, командой 
 docker build -t digital_chief_db-image .
