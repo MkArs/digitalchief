@@ -4,7 +4,7 @@
 относящиеся друг к другу в соотношении один ко многим
 (множество работников может ссылаться на 1 департамент).
 
-Если говорить о строчке таблицы depatments как об объекте,
+Если говорить о строчке таблицы departments как об объекте,
 то можно выделить следующие свойства:
 - id (уникальный номер департамента) первичный ключ
 - department_name (уникальное имя департамента)
@@ -41,18 +41,22 @@ PostgreSQL JDBC Driver для работы с БД
 3. Пошаговые инструкции.
 
 3.1. Создание и заполнение БД (скрипты выполняются для PostgreSQL).
-
-- выполнить скрипты, находящиеся в папке digitalchief-master\src\main\resources\db_scripts
-в прямом порядке их следования, где очередности соответствует 
-последняя цифра в названии файла
+- переименовать папку digitalchief-master в digitalchief и перейти в неё
+- создать образ Docker на основе скрипта, находящегося в папке 
+digitalchief\src\main\resources\db_scripts, командой 
+docker build -t digital_chief_db-image .
+- создать контейнер БД при командой 
+docker run --name digital_chief_db-container -p 5432:5432 -d digital_chief_db-image
+- далее Вы можете осуществить удобный просмотр БД при помощи различных средств,
+я использую pgAdmin 4
 
 3.2. Сборка и запуск приложения.
-- выполнить команду mvn clean install из корневой папки проекта digitalchief-master
-- перейти на уровень выше папки digitalchief-master в папку target
-- выполнить команду java -jar digitalchief-master-0.0.1-SNAPSHOT.jar
+- выполнить команду mvn clean install из корневой папки проекта digitalchief
+- перейти на уровень выше папки digitalchief в папку target
+- выполнить команду java -jar digitalchief-0.0.1-SNAPSHOT.jar
 
 3.3. Проверка работы приложения с помощью Postman.
-- Импортировать коллекции в Postman из папки digitalchief-master\src\main\resources\postman
+- Импортировать коллекции в Postman из папки digitalchief\src\main\resources\postman
 - Выполнить последовательно сверху вниз все запросы из departments_collection
 - Выполнить последовательно сверху вниз все запросы из employees_collection
 
